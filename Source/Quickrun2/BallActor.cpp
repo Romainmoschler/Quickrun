@@ -2,7 +2,11 @@
 
 
 #include "BallActor.h"
+#include "DrawDebugHelpers.h"
+#include "Math/Color.h"
+#include "Engine/World.h"
 #include "Components/InputComponent.h"
+
 
 // Sets default values
 ABallActor::ABallActor()
@@ -19,24 +23,10 @@ void ABallActor::BeginPlay()
 	
 }
 
-void ABallActor::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
-{
-	check(PlayerInputComponent);
-	PlayerInputComponent->BindAction("shoot", this, &ABallActor::shootBall)
-}
-
 // Called every frame
 void ABallActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-}
 
-
-void ABallActor::shootBall(float value)
-{
-	if (value != 0.0f)
-	{
-		Fvector
-	}
 }

@@ -23,13 +23,13 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	/*virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;*/
 
 
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	
-	void shootBall();
+	void shootBall(float value);
 	
 };
